@@ -2,8 +2,8 @@ PWD /Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/chapter1.tex
-OUTPUT chapter1.log
+INPUT /Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/solutions.tex
+OUTPUT solutions.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -100,10 +100,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./chapter1.aux
-INPUT chapter1.aux
-INPUT chapter1.aux
-OUTPUT chapter1.aux
+INPUT ./solutions.aux
+INPUT solutions.aux
+INPUT solutions.aux
+OUTPUT solutions.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -144,9 +144,9 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT chapter1.pdf
+OUTPUT solutions.pdf
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT chapter1.aux
+INPUT solutions.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
