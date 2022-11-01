@@ -1,1 +1,1 @@
-# Galois-Theory-Leinster-
+# Galois-Theory-Leinster
