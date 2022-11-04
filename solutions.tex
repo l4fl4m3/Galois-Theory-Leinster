@@ -1,6 +1,10 @@
 \documentclass{article}
 \usepackage{amsfonts} 
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dcolumn}
+
+\newcolumntype{2}{D{.}{}{4.0}}
 \title{Solutions: Galois Theory by Tom Leinster}
 \author{Hassaan Naeem}
 \date{\today}
@@ -38,7 +42,7 @@ them.\
 \subsection*{Exercise 1.1.6} 
 Let $z \in \mathbb{Q}$. Show that $z$ is not conjugate to $z'$ for any complex number $z' \neq z$.
 
-\paragraph{Solution:} We show both both parts (i) and (ii) seperately
+\paragraph{Solution:}
 
 \subsection*{Exercise 1.1.10}
 Suppose that $(z_1, ..., z_k)$ and $(z_1', ..., z_k')$ are conjugate. Show that $z_i$ and $z_i'$ are conjugate, for each $i \in \{1, ..., k\}$
@@ -199,9 +203,118 @@ If we have that $s=ur$ for some unit $u$, then also we have that
 \end{equation*}
 Therefore $s=ur \implies \langle r \rangle = \langle s \rangle$
 
+\subsection*{Exercise 2.3.1}
+Write down all the examples of fields that you know.
+\\\\
+\textbf{Solution:}
+$\mathbb{C}, \mathbb{R}, \mathbb{Q}$
+
+\subsection*{Exercise 2.3.5}
+Let $\phi : K \rightarrow L$ be a homomorphism of fields and let
+$0 \neq a \in K$. Prove that $\phi(a^{-1}) = \phi(a)^{-1}$.
+Why is $\phi(a)^{-1}$ defined?
+\\\\
+\textbf{Solution:}
+Since $K$ is a field, and the fact that $0 \neq a \in K$, we have that $a$ is a unit, $aa^{-1}=1$, and $a^{-1} \in K$.
+By \textbf{Lemma 2.3.3}, we have that $\phi: K \rightarrow L$ is injective. Hence, $\phi(a)\phi(a^{-1}) = \phi(a \circ a^{-1}) = \phi(1) = 1$, and
+$\phi(a^{-1})\phi(a) = \phi(a^{-1} \circ a) = \phi(1) = 1$. Therefore we have that $\phi(a^{-1})$ is both a left and right inverse
+of $a$ and hence it is the only inverse of $a$. Therefore, by injectivity $\phi(a^{-1}) = \phi(a)^{-1}$.
+
+\subsection*{Exercise 2.3.13}
+This proof of Lemma 2.3.12 is quite abstract. Find
+a more concrete proof, taking equation (2.2) as your definition of
+characteristic. (You will still need the fact that $\phi$ is injective.)
+\\\\
+\textbf{Solution:}
+By (2.2) we have:
+
+\[ char R = 
+    \begin{cases} 
+        \text{least}\ n>0: n*1_R = 0_R & ,\ \text{if such an n exists} \\
+        0 & ,\ \text{otherwise} \\
+    \end{cases}
+\]
+\\
+We know that $\phi(1_K) = 1_L$ and $\phi(0_K) = 0_L$, since $\phi$ is injective, then also
+$\phi(n\cdot 1_K) = n \cdot 1_L \ \forall n \in \mathbb{N}$. We have two possible cases for the characteristic $c$ of $K$ ($char K$),
+$c = 0$ or $c > 0$.\\\\
+If $c=0$, then $\phi(0_K) = 0_L = 0$. Therefore $char L = c = char K$.\\
+If $c>0$, then $\phi(c \cdot 1_K) = c\cdot 1_L = 0$. Therefore $char L = c = char K$.
+
+\subsection*{Exercise 2.3.15}
+What is the prime subfield of $\mathbb{R}$? Of $\mathbb{C}$?
+\\\\
+\textbf{Solution:}
+For $\mathbb{R}$ it is $\mathbb{Q}$. For $\mathbb{C}$ it is also $\mathbb{Q}$.
+See \textbf{Lemma 2.3.16}.
+
+\subsection*{Exercise 2.3.25}
+What are the irreducible elements of a field?
+\\\\
+\textbf{Solution:}
+We know thar for a ring $R$, $r$ is irreducible if $r$ is not 0 or a unit and if for $a,b \in R$, 
+then $r = ab \implies$ $a$ or $b$ is a unit.
+However, we know that every element of a field $K$ is a either a unit or 0. Therefore, there are no
+irreducible elements in a field.
+
 \section*{Chapter 3. Polynomials}
 
-\section*{Chapter 4. Field Extensions}
+\subsection*{Exercise 3.1.4}
+Show that whenever $R$ is a finite nontrivial ring, it is
+possible to find distinct polynomials over $R$ that induce the same function
+$R \rightarrow R$. (Hint: are there finitely or infinitely many polynomials
+over $R$? Functions $R \rightarrow R$?)
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.1.8}
+What happens to everything in the previous paragraph
+if we substitute $t=u^2+c$ instead?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.1.13}
+Let $p$ be a prime and consider the field $\mathbb{F}_p(t)$ of
+rational expressions over $\mathbb{F}_p$?. Show that $t$ has no $p$th root in $\mathbb{F}_p(t)$.
+(Hint: consider degrees of polynomials.)
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.2.4}
+Prove that the ideals in Warning 3.2.3 are indeed not
+principal.
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.3.5}
+If I gave you a quadratic over $\mathbb{Q}$, how would you decide
+whether it was reducible or irreducible?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.3.13}
+The last step in (3.9) was $'deg(\bar h) \leq deg(h)'$. Why
+is that true? And when does equality hold?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 3.3.15}
+Use Eisenstein's criterion to show that for every
+$n \ge 1$, there is an irreducible polynomial over $\mathbb{Q}$ of degree $n$.
+\\\\
+\textbf{Solution:}
+
+\section*{Chapter 4. Field extensions}
+
+\subsection*{Exercise 4.1.3}
+Find two examples of fields $K$ such that $Q \subsetneqq K \subsetneqq \mathbb{Q}(\sqrt2, i)$ 
+\\\\
+\textbf{Solution:} $K=\mathbb{Q}(\sqrt2) = \{a+b\sqrt2: a,b \in \mathbb{Q}\}$ and \\ $K=\mathbb{Q}(i)= \{a+bi: a,b \in \mathbb{Q}\}$
+
+\subsection*{Exercise 4.1.5}
+Check the truth of all the statements in the previous paragraph.
+\\\\
+\textbf{Solution:} Follow trivially from definitions of interesection and subfields. See \textbf{Lemma 2.2.3} for showing interesection of subfields still remains a subfield.
 
 \subsection*{Exercise 4.1.7}
 What is the subfield of $\mathbb{C}$ generated by $\{7/8\}$? By $\{2+3i\}$? By $\mathbb{R}\cup\{i\}$?
@@ -219,7 +332,7 @@ Let $M:K$ be a field extension. Show that $K(Y \cup Z) = (K(Y))(Z)$ whenever $Y,
 \textbf{Solution:}
 
 \subsection*{Exercise 4.2.2}
-Show that every element of $K$ is algebraic over $K$
+Show that every element of $K$ is algebraic over $K$.
 \paragraph{Solution:}
 Since $K$ is a field, $\forall k \in K: \exists -k \in K: k + (-k) = (-k) + k = 0$.
 Therefore, $\forall k \in K$, we can choose $f(t) = t - k \in K[t]$. Hence we have that $f \neq 0$
@@ -239,7 +352,7 @@ minimal polynomial $m$ over $K$ then $\phi(\alpha) \in L$ also has minimal polyn
 \textbf{Solution:}
 
 \subsection*{Exercise 4.3.9}
-Fill in the details of the last paragraph of that proof?
+Fill in the details of the last paragraph of that proof.
 \paragraph{Solution:}
 We show that there is at most one homomorphism $\phi: K(t) \rightarrow L$ over $K$ such that $\phi(t)= \beta$.
 We let $\phi$ and $\phi'$ be two such homomorphisms. Then we have that $\phi(t) = \beta = \phi'(t)$. By \textbf{Lemma 4.3.1 (ii)}
@@ -247,7 +360,7 @@ we have that $t$ generates $K(t)$ over $K$, and hence by \textbf{Lemma 4.3.6} $\
 
 
 \subsection*{Exercise 4.3.15}
-Prove that $\mathbb{Q}(\sqrt 2, \sqrt 3) = \mathbb{Q}(\sqrt 2 + \sqrt 3)$
+Prove that $\mathbb{Q}(\sqrt 2, \sqrt 3) = \mathbb{Q}(\sqrt 2 + \sqrt 3)$.
 \\\\
 \textbf{Solution:}
 We know that $\sqrt2 + \sqrt3 \in \mathbb{Q}(\sqrt2, \sqrt3)$ and hence $\mathbb{Q}(\sqrt2 + \sqrt3) \subseteq \mathbb{Q}(\sqrt2 , \sqrt3)$. Now we show the inclusion the other way.
@@ -264,4 +377,119 @@ $a_0 + a_1t + \langle t^2 - 2\rangle$ with $a_i \in \mathbb{F}_3$. Hence, there 
 \\\\
 In a similar manner, we know that $\mathbb{F}_2(\alpha)$ can be constructed as $\mathbb{F}_2[t]/\langle t^2+t+1 \rangle$. Hence any element of the field has the form
 $a_0 + a_1t + \langle t^2+t+1\rangle$ with $a_i \in \mathbb{F}_2$. Hence there are $2^2 = 4$ elements.
+
+\section*{Chapter 5. Degree}
+\subsection*{Exercise 5.1.9}
+Write out the addition and multiplication tables of $\mathbb{F}_2(\alpha)$.
+\\\\
+\textbf{Solution:}
+The tables are straightforward, using modulo arithmetic and the irreducible polynomial evaluated at $\alpha$.\\
+    \begin{center}
+        \renewcommand\arraystretch{1.3}
+        \setlength\doublerulesep{0pt}
+        \begin{tabular}{r||*{4}{2|}}
+            + & 0 & 1 & \alpha & 1+\alpha \\
+            \hline\hline
+            0 & 0 & 1 & \alpha & 1+\alpha \\ 
+            \hline
+            1 & 1 & 0 & 1+\alpha & \alpha \\ 
+            \hline
+            $\alpha$ & \alpha & 1+\alpha & 0 & 1 \\ 
+            \hline
+            $1+\alpha$ & 1+\alpha & \alpha & 1 & 0 \\ 
+            \hline
+        \end{tabular}
+    \end{center}
+    \vspace{0.5 cm}
+    \begin{center}
+        \renewcommand\arraystretch{1.3}
+        \setlength\doublerulesep{0pt}
+        \begin{tabular}{r||*{4}{2|}}
+            $\times$ & 0 & 1 & \alpha & 1+\alpha \\
+            \hline\hline
+            0 & 0 & 0 & 0 & 0 \\ 
+            \hline
+            1 & 0 & 1 & \alpha & 1+\alpha \\ 
+            \hline
+            $\alpha$ & 0 & \alpha & 1+\alpha & 1\\ 
+            \hline
+            $1+\alpha$ & 0 & 1+\alpha & 1 & \alpha \\ 
+            \hline
+        \end{tabular}
+    \end{center}
+
+\subsection*{Exercise 5.1.13}
+Give an example of to show that the inequalityin Corollary 5.1.12 can be strict. Your example can be as trivial as you like.
+\\\\
+\textbf{Solution:}
+We choose our fields and hence extensions to be $\mathbb{C}:\mathbb{R}:\mathbb{Q}$. We also choose $\beta = \sqrt2 \in \mathbb{C}$.
+The minimal polynomial of $\sqrt2$ over $\mathbb{Q}$ is $m = t^2 - 2$, 
+then deg$_\mathbb{Q}(\beta) = [\mathbb{Q}(\beta):\mathbb{Q}] = 2$.\\\\
+Similarly, the minimal polynomial of $\sqrt2$ over $\mathbb{R}$ is $m = t - \sqrt2$, 
+then deg$_\mathbb{R}(\beta) = [\mathbb{R}(\beta):\mathbb{R}] = 1$.\\\\
+Hence we have that $[\mathbb{R}(\beta):\mathbb{R}] < [\mathbb{Q}(\beta):\mathbb{Q}] \quad \square$
+
+\subsection*{Exercise 5.1.16}
+Let $M:K$ be a field extension and $\alpha$ a transcendental element of $M$. Can every element of $K(\alpha)$ be represented
+as a polynomial in $\alpha$ over $K$?
+\\\\
+\textbf{Solution:}
+We have that $K(\alpha) = \left\{ \frac {f(\alpha)}{g(\alpha)} : f,g \in F[t]\right\}$, which is just $K(t)$, the field
+rational expressions. Therefore it is not polynomial is $\alpha$ over $K$. 
+
+\subsection*{Exercise 5.1.20}
+Show that a field extension whose degree is a prime number must be simple.
+\\\\
+\textbf{Solution:}
+Let $M:K(\alpha):K$ be field extensions where $M$ and $K$ are arbitrary fields, $\alpha \in M$, and $[M:K] = p$, where $p$ is prime. By \textbf{Theorem 5.1.17 (iii)} we have $[M:K] = [M:K(\alpha)][K(\alpha):K]$.
+Hence, we must have that $[K(\alpha):K] = 1$ or $p$,
+however, we also know that $K(\alpha) \neq K$, hence $[K(\alpha):K] = p$, and therefore,
+$[M:K(\alpha)]=1$, which by \textbf{Example 5.1.3} tells us $M=K(\alpha)$.
+Hence $M:K$ is a simple.
+
+\subsection*{Exercise 5.1.23}
+Generalize Example 5.1.22. In other words, what
+general result does the argument of Example 5.1.22 prove, not involving
+the particular numbers chosen there?
+\\\\
+\textbf{Solution:}
+Let $M:K$ be a field extension and $\alpha_1,...,\alpha_n \in M$. If $gcd(deg_K(\alpha_1)\\,...,deg_K(\alpha_n))=1$ (i.e., coprime),
+then we have that, $[K(\alpha_1,...,\alpha_n):K] = [K(\alpha_1):K]...[K(\alpha_n):K]$ 
+
+\subsection*{Exercise 5.2.5}
+Let $M:K$ be a field extension and $K \subseteq L \subseteq M$. In the proof of Proposition 5.2.4, I said that if $L$ is a
+subfield of $M$ then $L$ is a $K$-linear subspace of $M$. Why is that true? And is the converse also true? Give proof or a counterexample.  
+\\\\
+\textbf{Solution:}
+We know that $M$ acts as a vector space over $K$. If $L$ is a subfield of $M$, then we can similarly conclude that $L$ acts as a vector space over $K$.
+Since we have that $L$ is a subset of $M$ (a subfield) we can conclude that $L$ is a linear ($K$-linear) subspace of $M$ (by definition of a linear subspace).
+\\\\ 
+The converse is not true.
+
+\subsection*{Exercise 5.2.8}
+Let $M:K$ be a field extension and write $L$ for the set of elements of $M$ algebraic over $K$. By imitating the proof of Proposition 5.2.7,
+prove that $L$ is a subfield of $M$.
+\\\\
+\textbf{Solution:}
+We have that $L = \{\alpha \in M: [K(\alpha):K]<\infty\}$.\\
+Then $\forall \alpha,\beta \in L,\ [K(\alpha,\beta):K] \leq [K(\alpha):K][K(\beta):K] < \infty$\\
+Now $\alpha+\beta \in K(\alpha,\beta)$, so $K(\alpha+\beta) \subseteq K(\alpha,\beta)$, hence \\
+$[K(\alpha+\beta):K] \leq [K(\alpha,\beta):K]<\infty$, giving $\alpha+\beta \in L$. Similarly, $\alpha \cdot \beta \in L$.\\
+Then $\forall \alpha \in L,\ [K(-\alpha):K] = [K(\alpha):K]<\infty$, giving $-\alpha \in L$.
+Similarly, $1/\alpha \in L$ (if $\alpha \neq 0$), and clearly $0,1 \in L \quad \square$
+
+\subsection*{Exercise 5.3.7}
+Find an example of Lemma 5.3.6 where $[LL':L]=2$, and another where $[LL':L]=1$.
+\\\\
+\textbf{Solution:}
+If we let $L = \mathbb{Q}(\sqrt2)$ and $L' = \mathbb{Q}(\sqrt3)$, we then get $LL' = \mathbb{Q}(\sqrt2,\sqrt3)$.
+Then $[\mathbb{Q}(\sqrt2,\sqrt3):\mathbb{Q}(\sqrt3)] = 2$.\\\\
+If we let $L = \mathbb{Q}(\sqrt4)$ and $L' = \mathbb{Q}(\sqrt3)$, we then get $LL' = \mathbb{Q}(\sqrt4,\sqrt3)$.
+Then $[\mathbb{Q}(\sqrt4,\sqrt3):\mathbb{Q}(\sqrt3)] = 1$.
 \end{document}
+
+\section*{Chapter 6. Splitting fields}
+\subsection*{Exercise 5.1.9}
+Write out the addition and multiplication tables of $\mathbb{F}_2(\alpha)$.
+\\\\
+\textbf{Solution:}
