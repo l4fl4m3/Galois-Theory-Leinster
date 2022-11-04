@@ -275,10 +275,15 @@ if we substitute $t=u^2+c$ instead?
 
 \subsection*{Exercise 3.1.13}
 Let $p$ be a prime and consider the field $\mathbb{F}_p(t)$ of
-rational expressions over $\mathbb{F}_p$?. Show that $t$ has no $p$th root in $\mathbb{F}_p(t)$.
+rational expressions over $\mathbb{F}_p$. Show that $t$ has no $p$th root in $\mathbb{F}_p(t)$.
 (Hint: consider degrees of polynomials.)
 \\\\
 \textbf{Solution:}
+A rational expression over $K$ is $\frac{f(t)}{g(t)}$ where $f(t), g(t) \in K[t]$ with $g \neq 0$.
+For any $\frac{f(t)}{g(t)} \in \mathbb{F}_p(t)$ where $f(t), g(t) \in \mathbb{F}_p[t]$, suppose we have
+have that $\left( \frac{f(t)}{g(t)} \right)^p = t$. We then have that $f^p = tg^p$. Then $deg(f^p) = np$ where $n=deg(f)$ and
+$deg(tg^p) = deg(t)+deg(g^p) = 1 + mp$ where $m=deg(g)$, hence we have $np = mp+1 \leadsto p = \frac{1}{n-m}$.
+But this is impossible since $p$ is prime, hence a contradiction, hence $t$ has no $p$th root in $\mathbb{F}_p(t)$.
 
 \subsection*{Exercise 3.2.4}
 Prove that the ideals in Warning 3.2.3 are indeed not
@@ -291,18 +296,27 @@ If I gave you a quadratic over $\mathbb{Q}$, how would you decide
 whether it was reducible or irreducible?
 \\\\
 \textbf{Solution:}
+By \textbf{Lemma 3.3.1 (ii)}, if the quadratic has a root in $\mathbb{Q}$, then it is reducible.
+By the same lemma \textbf{(iii)}, if the quadratic has no root in $\mathbb{Q}$, then it is irreducible. 
 
 \subsection*{Exercise 3.3.13}
 The last step in (3.9) was $'deg(\bar h) \leq deg(h)'$. Why
 is that true? And when does equality hold?
 \\\\
 \textbf{Solution:}
+$\bar h = hmodp$. Therefore if $p|a_{n_h}$ then $a_{n_{\bar h}}=0$ and $deg(\bar h) < deg(h)$. If $p \nmid a_{n_h}$ then $a_{n_h} = a_{n_{\bar h}}$ and $deg(\bar h)= deg(h)$.
+Therefore $deg(\bar h) \leq deg(h)$. Equality holds on the preceding condition.
 
 \subsection*{Exercise 3.3.15}
 Use Eisenstein's criterion to show that for every
 $n \ge 1$, there is an irreducible polynomial over $\mathbb{Q}$ of degree $n$.
 \\\\
 \textbf{Solution:}
+Let $f(t) = a_0 + ... + a_nt^n \in \mathbb{Q}[t]$ with $n \geq 1$.
+For $n \geq 1$, we can always choose an $f \in \mathbb{Q}[t]$ such that $f(t)=a_nt^n + a_0$, and we can further
+always choose an $a_n, a_0$ and $p$ such that $p \nmid a_n,\ p|a_0,\ p^2 \nmid a_0$. Hence, we have $f(t) = a_nt^n + a_0$ fulfilling the
+Eisenstein criterion, and hence $f(t)$ is irreducible over $\mathbb{Q}$. As an example, we can always choose
+$f(t) = t^n +2$ and $p=2$.
 
 \section*{Chapter 4. Field extensions}
 

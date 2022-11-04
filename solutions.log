@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.22)  3 NOV 2022 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.22)  3 NOV 2022 23:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,146 +258,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--275
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--282
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--294
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 296--300
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--306
+Underfull \hbox (badness 10000) in paragraph at lines 303--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--318
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--328
+Underfull \hbox (badness 10000) in paragraph at lines 329--332
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 330--333
+Underfull \hbox (badness 10000) in paragraph at lines 334--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--353
+Underfull \hbox (badness 10000) in paragraph at lines 334--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 334--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--367
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 372--380
+Underfull \hbox (badness 10000) in paragraph at lines 377--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--380
+Underfull \hbox (badness 10000) in paragraph at lines 386--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--387
+Underfull \hbox (badness 10000) in paragraph at lines 386--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--387
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 422--431
+Underfull \hbox (badness 10000) in paragraph at lines 436--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--431
+Underfull \hbox (badness 10000) in paragraph at lines 436--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--431
+Underfull \hbox (badness 10000) in paragraph at lines 436--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--439
+Underfull \hbox (badness 10000) in paragraph at lines 447--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--449
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--458
+Underfull \hbox (badness 10000) in paragraph at lines 455--463
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 460--468
+Underfull \hbox (badness 10000) in paragraph at lines 465--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--468
+Underfull \hbox (badness 10000) in paragraph at lines 474--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--480
+Underfull \hbox (badness 10000) in paragraph at lines 474--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--489
+Underfull \hbox (badness 10000) in paragraph at lines 484--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--489
+Underfull \hbox (badness 10000) in paragraph at lines 496--503
 
  []
 
-[11] (./solutions.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--503
+
+ []
+
+[11] [12] (./solutions.aux) ) 
 Here is how much of TeX's memory you used:
  1765 strings out of 478268
  25458 string characters out of 5846347
@@ -406,11 +406,11 @@ Here is how much of TeX's memory you used:
  477122 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,9n,62p,308b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on solutions.pdf (11 pages, 189728 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on solutions.pdf (12 pages, 209084 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
