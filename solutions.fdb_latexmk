@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1667533728 "/Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/solutions.tex" "solutions.pdf" "solutions" 1667533730
-  "/Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/solutions.tex" 1667533728 23779 caba424b5ccad447d561e4e07518cc31 ""
+["pdflatex"] 1668112986 "/Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/solutions.tex" "solutions.pdf" "solutions" 1668112988
+  "/Users/hassaannaeem/Math_Phys/Galois_Theory_Leinster/solutions.tex" 1668112984 25339 0a04c86b333314b38e305778abfb716d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -57,8 +57,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653203149 2826437 b0e40f3b1d452ff74c9ce1bae127efd6 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "solutions.aux" 1667533730 1041 27876f7aa8eab098086cd08fd26786c0 "pdflatex"
-  "solutions.tex" 1667533728 23779 caba424b5ccad447d561e4e07518cc31 ""
+  "solutions.aux" 1668112988 1041 380a5c58b2ae860722a43da92f14a42d "pdflatex"
+  "solutions.tex" 1668112984 25339 0a04c86b333314b38e305778abfb716d ""
   (generated)
   "solutions.aux"
   "solutions.log"

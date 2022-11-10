@@ -263,7 +263,7 @@ irreducible elements in a field.
 Show that whenever $R$ is a finite nontrivial ring, it is
 possible to find distinct polynomials over $R$ that induce the same function
 $R \rightarrow R$. (Hint: are there finitely or infinitely many polynomials
-over $R$? Functions $R \rightarrow R$?)
+over $R$? Functions $R \rightarrow R$?)l
 \\\\
 \textbf{Solution:}
 
@@ -500,10 +500,44 @@ If we let $L = \mathbb{Q}(\sqrt2)$ and $L' = \mathbb{Q}(\sqrt3)$, we then get $L
 Then $[\mathbb{Q}(\sqrt2,\sqrt3):\mathbb{Q}(\sqrt3)] = 2$.\\\\
 If we let $L = \mathbb{Q}(\sqrt4)$ and $L' = \mathbb{Q}(\sqrt3)$, we then get $LL' = \mathbb{Q}(\sqrt4,\sqrt3)$.
 Then $[\mathbb{Q}(\sqrt4,\sqrt3):\mathbb{Q}(\sqrt3)] = 1$.
-\end{document}
+
 
 \section*{Chapter 6. Splitting fields}
-\subsection*{Exercise 5.1.9}
-Write out the addition and multiplication tables of $\mathbb{F}_2(\alpha)$.
+\subsection*{Exercise 6.1.5}
+Show that if a ring homomorphism $\psi$ is injective then
+so is $\psi_*$, and if $\psi$ is an isomorphism then so is $\psi_*$.
 \\\\
 \textbf{Solution:}
+We have that $\psi: R \rightarrow S$ and $\psi_*:R[t] \rightarrow S[t]$. Since $\psi$ is injective we that
+$\forall x,y \in R$ if $\psi(x)=\psi(y) \implies x=y$. Then we choose $f, f' \in R[t]$ and assume that
+$\psi_*f = \psi_*f'$. From \textbf{Definition 3.1.7} we then have that:
+\begin{equation*}
+    \begin{aligned}
+        \psi_*f &= \psi_*f'\\
+        \psi_* \left(\sum_{i} a_it^i \right) &= \psi_* \left(\sum_{i} b_it^i \right)\\
+        \sum_{i} \psi(a_i)t^i &= \sum_{i} \psi(b_i)t^i\\
+        \psi(a_i) &= \psi(b_i)\\
+        \implies a_i &= b_i 
+    \end{aligned}
+\end{equation*}
+Hence we have that $f=\sum_{i}a_it^i = f'$. Hence $\psi_*$ is injective.
+\\\\
+If $\psi$ is an isomorphism then $\psi$ is both surjective and injective. We have just shown that
+$\psi_*$ is injective, so we show that it is also surjective to prove it is an isomorphism. We know that
+$\phi_*$ is surjective $\iff \forall s \in S[t] \ \exists r \in R[t]:\psi_*r=s$. We choose $s \in S[t]$ and
+let $e$ be the identity homomorphism. Then we have:
+\begin{equation*}
+    \begin{aligned}
+        s&=es\\
+        &=(\psi_*\psi_*^{-1})s\\
+        &=\psi_*(\psi_*^{-1}s)\\
+        &=\psi_*\left(\psi_*^{-1}\left(\sum_{i}a_it^i\right)\right)\\
+        &=\psi_*\left(\sum_{i}\psi^{-1}(a_i)t^i\right)\\
+        &=\psi_*r
+    \end{aligned}
+\end{equation*}
+where $\psi^{-1}(a_i) \in R$ exists since $\psi$ is an isomorphism, and $r=\sum_{i}\psi^{-1}(a_i)t^i \in R[t]$.
+Hence $\psi_*$ is also surjective, hence it is an isomorphism.
+
+
+\end{document}
