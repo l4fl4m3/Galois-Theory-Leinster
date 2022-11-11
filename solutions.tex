@@ -539,5 +539,25 @@ let $e$ be the identity homomorphism. Then we have:
 where $\psi^{-1}(a_i) \in R$ exists since $\psi$ is an isomorphism, and $r=\sum_{i}\psi^{-1}(a_i)t^i \in R[t]$.
 Hence $\psi_*$ is also surjective, hence it is an isomorphism.
 
+\subsection*{Exercise 6.1.5}
+Show that (ii) can equivalently be replaced by: `if $L$ is a subfield of $M$
+containing $K$, and $f$ splits in $L$, then $L=M$'.
+\\\\
+\textbf{Solution:}
+We first show ($\implies$). By (ii) we have that $f(t)=(t-\alpha_1)...(t-\alpha_n)=0$
+\\\\
+We then show ($\Longleftarrow$). We have that $K \subseteq L = M$, and $f(t)=\beta(t-\alpha_1)\cdot\cdot\cdot(t-\alpha_n)$
+for some $n \ge 0$ and $\beta, \alpha_1,...,\alpha_n \in M$.
+
+\subsection*{Exercise 6.2.9}
+In Example 6.2.8(iii), I said that $\mathbb{Q}(\xi, \omega\xi, \omega^2\xi) = \mathbb{Q}(\xi,\omega)$.
+Why is that true?
+\\\\
+\textbf{Solution:}
+We know that $\mathbb{Q}(\xi)= \left\{a + b\xi + c\xi^2: a,b,c \in \mathbb{Q} \right\}$, and hence $\{1, \xi, \xi^2\}$
+forms a basis for $\mathbb{Q}(\xi):\mathbb{Q}$. Similarly, $\{1, \omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega): \mathbb{Q}(\xi)$.
+By \textbf{Theorem 5.1.17 (Tower Law)(i)} we then have that $\{1, \xi, \xi^2, \omega, \xi\omega, \xi^2\omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega):\mathbb{Q}$.
+
+
 
 \end{document}
