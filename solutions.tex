@@ -554,10 +554,66 @@ In Example 6.2.8(iii), I said that $\mathbb{Q}(\xi, \omega\xi, \omega^2\xi) = \m
 Why is that true?
 \\\\
 \textbf{Solution:}
-We know that $\mathbb{Q}(\xi)= \left\{a + b\xi + c\xi^2: a,b,c \in \mathbb{Q} \right\}$, and hence $\{1, \xi, \xi^2\}$
+$\omega=e^{2\pi i /3} = \frac{-1+i\sqrt{3}}{2}$, and hence $\omega^2 = \frac{-1-i\sqrt{3}}{2}$. and hence we see that $\omega^2$ is a rational multiple
+of $\omega$, hence $\mathbb{Q}(\xi, \omega\xi, \omega^2\xi) = \mathbb{Q}(\xi,\omega)$.
+\\\\
+As an aside, we know that $\mathbb{Q}(\xi)= \left\{a + b\xi + c\xi^2: a,b,c \in \mathbb{Q} \right\}$, and hence $\{1, \xi, \xi^2\}$
 forms a basis for $\mathbb{Q}(\xi):\mathbb{Q}$. Similarly, $\{1, \omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega): \mathbb{Q}(\xi)$.
 By \textbf{Theorem 5.1.17 (Tower Law)(i)} we then have that $\{1, \xi, \xi^2, \omega, \xi\omega, \xi^2\omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega):\mathbb{Q}$.
 
 
+\subsection*{Exercise 6.3.2}
+Check that this really does define a group.
+\\\\
+\textbf{Solution:}
+Firstly we have that $Gal(M:K) = Aut(M:K)$.
+By definition we have $Aut(M:K)= \{f: M:K \rightarrow M:K \ |\ f \ \text{is an isomorphism of } M:K\}$
+and $\circ: M:K \times M:K \rightarrow M:K$.
+We show that the pair $(Aut(M:K), \circ)$ is a group.\\\\
+Firstly, for $f,g \in Aut(M:K)$ and $\forall a,b \in M:K$, we have that:
+\begin{equation*}
+    \begin{aligned}
+        (g \circ f) (ab) & = g(f(ab))\\
+        & = g(f(a)f(b))\\
+        & = g(f(a))g(f(b))\\
+        & = (g \circ f)(a)(g \circ f)(b)
+    \end{aligned}
+\end{equation*}
+Since $f,g$ are bijective by defintion, $g \circ f$ is bijective, and by above is a homomorphism, hence it is an automporhism.
+\\\\
+We now show associativity. $\forall f,g,h \in Aut(M:K)$ and $a \in M:K$ we have:
+\begin{equation*}
+    \begin{aligned}
+        ((h \circ g) \circ f) (a) & = h(g(f(a)))\\
+        & = h(g \circ f(a))\\
+        & = h \circ (g \circ f(a))\\
+        & = (h \circ (g \circ f))(a) \quad \square
+    \end{aligned}
+\end{equation*}
+\\\\
+Next, we check for an identity. $\forall f \in Aut(M:K)$ and $e_{M:K}: (M:K) \rightarrow (M:K) \ : a \mapsto a$ we have, 
+$f \circ e_{M:K} = e_{M:K} \circ f  = f$. Hence $e_{M:K}$ is the identity element.
+\\\\
+Finally, we check for the inverse. $\forall f \in Aut(M:K)$, we have that $f \circ f^{-1} = e_{M:K} = f^{-1} \circ f$.
+This follows by definition since $f$ is an isomorphism.
+
+\subsection*{Exercise 6.342}
+Prove that $Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q}) = \{ id, \kappa\}$, where $\kappa(z)=\bar z$.
+\\\\
+\textbf{Solution:}
+We know that the identity is an automorphism of $\mathbb{Q}(e^{2\pi i /3})$ over $\mathbb{Q}$. 
+By \textbf{Lemma 1.1.2}, since $\mathbb{Q} \subset \mathbb{R}$ we have that $\kappa$ is also an automorphism of $\mathbb{Q}(e^{2\pi i /3})$ over $\mathbb{Q}$.
+\\\\
+Hence we have that $\{ id, \kappa\} \subseteq Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q})$
+\\\\
+Since $\theta$ is a homomorphism, we then have that:
+\begin{equation*}
+    \begin{aligned}
+        (\theta(e^{2\pi i /3}))^3 &= \theta((e^{2\pi i /3})^3)\\
+        &= \theta(1)\\
+        &= 1
+    \end{aligned}
+\end{equation*}
+Since $\theta(e^{2\pi i /3}) \in \mathbb{Q}(e^{2\pi i /3}) \subseteq \mathbb{Q}(i \sqrt{3})$, so $\theta(e^{2\pi i /3}) = e^{2\pi i /3},e^{-2\pi i /3}$
 
 \end{document}
