@@ -378,8 +378,8 @@ Prove that $\mathbb{Q}(\sqrt 2, \sqrt 3) = \mathbb{Q}(\sqrt 2 + \sqrt 3)$.
 \\\\
 \textbf{Solution:}
 We know that $\sqrt2 + \sqrt3 \in \mathbb{Q}(\sqrt2, \sqrt3)$ and hence $\mathbb{Q}(\sqrt2 + \sqrt3) \subseteq \mathbb{Q}(\sqrt2 , \sqrt3)$. Now we show the inclusion the other way.
-We use the hint and get that $(\sqrt2 + \sqrt3)^3 = 11\sqrt2 + 9\sqrt3 \in \mathbb{Q}(\sqrt2, \sqrt3)$. Then we have that:\\ $11\sqrt2 + 9\sqrt3 - 9(\sqrt2 + \sqrt3 ) = 2\sqrt2 \in \mathbb{Q}(\sqrt2, \sqrt3)$, 
-hence $\sqrt2 \in \mathbb{Q}(\sqrt2, \sqrt3)$. Similarly, we get that $\sqrt3 \in \mathbb{Q}(\sqrt2, \sqrt3)$. Therefore, $\mathbb{Q}(\sqrt2, \sqrt3) \subseteq \mathbb{Q}(\sqrt2 + \sqrt3) \quad \square$
+We use the hint and get that $(\sqrt2 + \sqrt3)^3 = 11\sqrt2 + 9\sqrt3 \in \mathbb{Q}(\sqrt2+ \sqrt3)$. Then we have that:\\ $11\sqrt2 + 9\sqrt3 - 9(\sqrt2 + \sqrt3 ) = 2\sqrt2 \in \mathbb{Q}(\sqrt2 + \sqrt3)$, 
+hence $\sqrt2 \in \mathbb{Q}(\sqrt2 + \sqrt3)$. Similarly, we get that $\sqrt3 \in \mathbb{Q}(\sqrt2 + \sqrt3)$. Therefore, $\mathbb{Q}(\sqrt2, \sqrt3) \subseteq \mathbb{Q}(\sqrt2 + \sqrt3) \quad \square$
 
 
 \subsection*{Exercise 4.3.18}
@@ -604,16 +604,18 @@ Prove that $Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q}) = \{ id, \kappa\}$, where 
 We know that the identity is an automorphism of $\mathbb{Q}(e^{2\pi i /3})$ over $\mathbb{Q}$. 
 By \textbf{Lemma 1.1.2}, since $\mathbb{Q} \subset \mathbb{R}$ we have that $\kappa$ is also an automorphism of $\mathbb{Q}(e^{2\pi i /3})$ over $\mathbb{Q}$.
 \\\\
-Hence we have that $\{ id, \kappa\} \subseteq Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q})$
+Hence we have that $\{ id, \kappa\} \subseteq Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q})$.
+We also know that $\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q} = \mathbb{Q}(\frac{-1+i\sqrt{3}}{2}):\mathbb{Q}=  \mathbb{Q}(i\sqrt{3}):\mathbb{Q}$
 \\\\
 Since $\theta$ is a homomorphism, we then have that:
 \begin{equation*}
     \begin{aligned}
-        (\theta(e^{2\pi i /3}))^3 &= \theta((e^{2\pi i /3})^3)\\
-        &= \theta(1)\\
-        &= 1
+        (\theta(i\sqrt{3}))^2 &= \theta((i\sqrt{3})^2)\\
+        &= -3*\theta(1)\\
+        &= -3
     \end{aligned}
 \end{equation*}
-Since $\theta(e^{2\pi i /3}) \in \mathbb{Q}(e^{2\pi i /3}) \subseteq \mathbb{Q}(i \sqrt{3})$, so $\theta(e^{2\pi i /3}) = e^{2\pi i /3},e^{-2\pi i /3}$
+Hence $\theta(i \sqrt{3}) = \pm i\sqrt{3}$. If $\theta(i\sqrt{3}) = i\sqrt{3}$ then $\theta = id$,
+and if $\theta(i\sqrt{3}) = -i\sqrt{3}$ then $\theta=\kappa$
 
 \end{document}
