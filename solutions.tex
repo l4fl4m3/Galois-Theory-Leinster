@@ -539,15 +539,18 @@ let $e$ be the identity homomorphism. Then we have:
 where $\psi^{-1}(a_i) \in R$ exists since $\psi$ is an isomorphism, and $r=\sum_{i}\psi^{-1}(a_i)t^i \in R[t]$.
 Hence $\psi_*$ is also surjective, hence it is an isomorphism.
 
-\subsection*{Exercise 6.1.5}
+\subsection*{Exercise 6.2.7}
 Show that (ii) can equivalently be replaced by: `if $L$ is a subfield of $M$
 containing $K$, and $f$ splits in $L$, then $L=M$'.
 \\\\
 \textbf{Solution:}
-We first show ($\implies$). By (ii) we have that $f(t)=(t-\alpha_1)...(t-\alpha_n)=0$
+We first show ($\implies$). We have that $M= K(\alpha_1,...,\alpha_n)$ and so $M:K$ is well defined.
+We then take a basis $\alpha_1,...,\alpha_n$ of $M$ over $K$. Then we have that every subfield $L$ of $M$
+containing $K$ is a $K$-linear subspace of $M$. So if $\alpha_1,...,\alpha_n \in L$, which would mean that $f$ splits in $L$,
+then $L=M$.
 \\\\
 We then show ($\Longleftarrow$). We have that $K \subseteq L = M$, and $f(t)=\beta(t-\alpha_1)\cdot\cdot\cdot(t-\alpha_n)$
-for some $n \ge 0$ and $\beta, \alpha_1,...,\alpha_n \in M$.
+for some $n \ge 0$ and $\beta, \alpha_1,...,\alpha_n \in L=M$. Then the result follows trivially from \textbf{Proposition 5.2.4}. 
 
 \subsection*{Exercise 6.2.9}
 In Example 6.2.8(iii), I said that $\mathbb{Q}(\xi, \omega\xi, \omega^2\xi) = \mathbb{Q}(\xi,\omega)$.
@@ -561,6 +564,12 @@ As an aside, we know that $\mathbb{Q}(\xi)= \left\{a + b\xi + c\xi^2: a,b,c \in 
 forms a basis for $\mathbb{Q}(\xi):\mathbb{Q}$. Similarly, $\{1, \omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega): \mathbb{Q}(\xi)$.
 By \textbf{Theorem 5.1.17 (Tower Law)(i)} we then have that $\{1, \xi, \xi^2, \omega, \xi\omega, \xi^2\omega\}$ forms a basis for $\mathbb{Q}(\xi, \omega):\mathbb{Q}$.
 
+\subsection*{Exercise 6.2.12}
+Why does the proof of \textbf{Proposition 6.2.11} not show that there are \emph{exactly} $[M:K]$ isomorphisms $\phi$ extending $\psi$?
+How could you strengthen the hypothesis in order to obtain that conclusion?
+\\\\
+\textbf{Solution:}
+It can be strengthened by ...
 
 \subsection*{Exercise 6.3.2}
 Check that this really does define a group.
@@ -597,7 +606,7 @@ $f \circ e_{M:K} = e_{M:K} \circ f  = f$. Hence $e_{M:K}$ is the identity elemen
 Finally, we check for the inverse. $\forall f \in Aut(M:K)$, we have that $f \circ f^{-1} = e_{M:K} = f^{-1} \circ f$.
 This follows by definition since $f$ is an isomorphism.
 
-\subsection*{Exercise 6.342}
+\subsection*{Exercise 6.3.4}
 Prove that $Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q}) = \{ id, \kappa\}$, where $\kappa(z)=\bar z$.
 \\\\
 \textbf{Solution:}
@@ -607,15 +616,24 @@ By \textbf{Lemma 1.1.2}, since $\mathbb{Q} \subset \mathbb{R}$ we have that $\ka
 Hence we have that $\{ id, \kappa\} \subseteq Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q})$.
 We also know that $\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q} = \mathbb{Q}(\frac{-1+i\sqrt{3}}{2}):\mathbb{Q}=  \mathbb{Q}(i\sqrt{3}):\mathbb{Q}$
 \\\\
-Since $\theta$ is a homomorphism, we then have that:
+We let $\theta \in Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q})$. Since $\theta$ is a homomorphism we have that:
 \begin{equation*}
     \begin{aligned}
         (\theta(i\sqrt{3}))^2 &= \theta((i\sqrt{3})^2)\\
-        &= -3*\theta(1)\\
+        &= \theta(-3)\\
+        &= -\theta(3)\\
         &= -3
     \end{aligned}
 \end{equation*}
 Hence $\theta(i \sqrt{3}) = \pm i\sqrt{3}$. If $\theta(i\sqrt{3}) = i\sqrt{3}$ then $\theta = id$,
-and if $\theta(i\sqrt{3}) = -i\sqrt{3}$ then $\theta=\kappa$
+and if $\theta(i\sqrt{3}) = -i\sqrt{3}$ then $\theta=\kappa$. Hence $Gal(\mathbb{Q}(e^{2\pi i /3}):\mathbb{Q}) = \{id, \kappa\}$.
+
+\subsection*{Exercise 6.3.11}
+I skipped two small bits in that proof: `$\theta$ is surjective because $\sigma$ is a permutation' (why?), and
+`You can check that $\theta$ is a homomorphism of fields'. Fill in the gaps.
+\\\\
+\textbf{Solution:}
+This follows by defnition of permutation. A permutation is a bijective map from a set to itself, hence it is surjective.
+$\theta$ is a homomorphism of fields
 
 \end{document}
