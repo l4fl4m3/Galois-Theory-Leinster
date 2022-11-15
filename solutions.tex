@@ -633,7 +633,65 @@ I skipped two small bits in that proof: `$\theta$ is surjective because $\sigma$
 `You can check that $\theta$ is a homomorphism of fields'. Fill in the gaps.
 \\\\
 \textbf{Solution:}
-This follows by defnition of permutation. A permutation is a bijective map from a set to itself, hence it is surjective.
-$\theta$ is a homomorphism of fields
+This follows by definition of permutation. A permutation is a bijective map from a set to itself, hence it is surjective.
+$\theta$ is a homomorphism of fields.
+\\\\
+Secondly, by \textbf{Definition 6.3.5} $Gal_K(f)$ is $Gal(SF_K(f):K)$. Then by \textbf{Definition 6.3.1} we know that
+an element of $Gal(M:K)$ is an isomorphism $\theta:M\rightarrow M$, hence by defintion we have that
+$\theta \in Gal_K(f)$ is a homomorphism of fields.
+
+\section*{Chapter 7. Preparation for the fundamental theorem}
+\subsection*{Exercise 7.1.4}
+What happens if you drop the word ‘irreducible’ from
+Lemma 7.1.2? Is it still true?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 7.1.4}
+What happens if you drop the word ‘irreducible’ from
+Lemma 7.1.2? Is it still true?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 7.2.1}
+Try to find an example of an irreducible polynomial
+of degree $d$ with fewer than $d$ distinct roots in its splitting field.
+\\\\
+\textbf{Solution:}
+An irreducible polynomial over a field of characteristic 0 has distinct roots in its splitting field.
+Therefore we must consider field of characteristic $p >0$, where $p$ is prime. Hence if we have the field extension $\mathbb{F}_p(t):\mathbb{F}_p(t^p)$,
+and we consdier $t \in \mathbb{F}_p(t)$ its minimal polynomial over $\mathbb{F}_p(t^p)$ is $X^p -t^p = (X-t)^p$. We get to the last step from the Frobenius automorphism.
+
+\subsection*{Exercise 7.2.8}
+Check one or two of the properties in Lemma 7.2.7.
+\\\\
+\textbf{Solution:}
+We check the additive property.\\\\
+We let $f(t) = \sum_{i=0}^{n} a_it^i \in K[t]$ and $ g(t) = \sum_{i=0}^{n} b_it^i \in K[t]$.
+Then we have that $f(t)+g(t) = \sum_{i=0}^{n} (a_i+b_i)t^i = \sum_{i=0}^{n} c_it^i \in K[t]$, where
+$c_i = (a_i+b_i)$. Then by \textbf{Definition 7.2.6} we have that $D(f+g)(t) = \sum_{i=1}^{n} ic_it^{i-1} = \sum_{i=1}^{n}i(a_i+b_i)t^{i-1} = \sum_{i=1}^{n} ia_it^{i-1} + \sum_{i=1}^{n} ib_it^{i-1} = Df + Dg \in K[t]$
+
+\subsection*{Exercise 7.2.15}
+Let $M:L:K$ be field extensions. Show that if $M:K$ is algebraic then so are $M:L$ and $L:K$.
+\\\\
+\textbf{Solution:}
+By definition of an algebraic extension, we have that if $M:K$ is algebraic then $\forall \alpha \in M \ \exists f \neq 0 \in K[t] : f(\alpha)=0$. Since we have that $M$ is a field extension of $L$
+it must contain all of $L$, therefore we have that $\forall \alpha \in L \ \exists f \neq 0 \in K[t]: f(\alpha)=0$, hence $L:K$ is algebraic. Similarly, since $L$ extends $K$
+any $f \neq 0 \in K[t]$ must exist in $L[t]$, hence we that $\forall \alpha \in M \ \exists f \neq 0 \in L[t]: f(\alpha)=0$, hence $M:L$ is algebraic.
+
+\subsection*{Exercise 7.3.2}
+Using Lemma 7.3.1, show that every automorphism of a field is an automorphism over its prime subfield. In other words,
+$Aut(M) = Gal(M:K)$ whenever $M$ is a field with prime subfield $K$.
+\\\\
+\textbf{Solution:}
+We know by definiton, that $Gal(M:K) = a$
+
+\subsection*{Exercise 7.3.5}
+Find another example of Theorem 7.3.3.
+\\\\
+\textbf{Solution:}
+We follow \textbf{Example 7.3.4}. If we have $\kappa: \mathbb{Q}(\sqrt2) \rightarrow \mathbb{Q}(\sqrt2)$ representing complex conjugation,
+then $H=\{id, \kappa\}$ is a subgroup of $Aut(\mathbb{Q}(\sqrt2))$. By \textbf{Theorem 7.3.3}, we have that $[\mathbb{Q}(\sqrt2): \text{Fix}(H)] \le |H| = 2$.
+Since $\text{Fix}(H) = \mathbb{Q}$, and we know that $[\mathbb{Q}(\sqrt2):\mathbb{Q}]=2$, the inequality holds.
 
 \end{document}
