@@ -684,7 +684,16 @@ Using Lemma 7.3.1, show that every automorphism of a field is an automorphism ov
 $Aut(M) = Gal(M:K)$ whenever $M$ is a field with prime subfield $K$.
 \\\\
 \textbf{Solution:}
-We know by definiton, that $Gal(M:K) = a$
+By \textbf{Lemma 7.3.1} we have that $\forall S \subseteq Aut(M), \ Fix(S) \subseteq M$. Since $K$ is the prime subfield of $M$ we have that $K \subseteq Fix(S) \subseteq M$, and we also have that $K \subseteq Fix(S) \subseteq M:K$. Hence we have that:
+\begin{equation*}
+    \begin{aligned}
+        Aut(M) &= \{ S: Fix(S) \subseteq M\}\\
+        &= \{S: K \subseteq Fix(S) \subseteq M \}\\
+        &= \{S: K \subseteq Fix(S) \subseteq M:K\}\\
+        &= \{S: Fix(S) \subseteq M:K\}\\
+        &= Gal (M:K) \quad \square
+    \end{aligned}
+\end{equation*}
 
 \subsection*{Exercise 7.3.5}
 Find another example of Theorem 7.3.3.
@@ -694,4 +703,12 @@ We follow \textbf{Example 7.3.4}. If we have $\kappa: \mathbb{Q}(\sqrt2) \righta
 then $H=\{id, \kappa\}$ is a subgroup of $Aut(\mathbb{Q}(\sqrt2))$. By \textbf{Theorem 7.3.3}, we have that $[\mathbb{Q}(\sqrt2): \text{Fix}(H)] \le |H| = 2$.
 Since $\text{Fix}(H) = \mathbb{Q}$, and we know that $[\mathbb{Q}(\sqrt2):\mathbb{Q}]=2$, the inequality holds.
 
+
+\section*{Chapter 8. The fundamental theorem of Galois theory}
+\subsection*{Exercise 8.1.4}
+Prove the first half of Lemma 8.1.2(i).
+\\\\
+\textbf{Solution:}
+We assume that $L_1 \subseteq L_2$ and let $\phi \in Gal(M:L_2)$. Then we have that $\phi(\alpha) = \alpha \ \forall \alpha \in L_2$.
+Hence we have that $\phi(\alpha) = \alpha \ \forall \alpha \in L_1$, hence $\phi \in Gal(M:L_1)$
 \end{document}
