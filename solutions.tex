@@ -3,6 +3,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{dcolumn}
+\usepackage{tikz-cd}
+
 
 \newcolumntype{2}{D{.}{}{4.0}}
 \title{Solutions: Galois Theory by Tom Leinster}
@@ -710,5 +712,20 @@ Prove the first half of Lemma 8.1.2(i).
 \\\\
 \textbf{Solution:}
 We assume that $L_1 \subseteq L_2$ and let $\phi \in Gal(M:L_2)$. Then we have that $\phi(\alpha) = \alpha \ \forall \alpha \in L_2$.
-Hence we have that $\phi(\alpha) = \alpha \ \forall \alpha \in L_1$, hence $\phi \in Gal(M:L_1)$
+Hence we have that $\phi(\alpha) = \alpha \ \forall \alpha \in L_1$, hence $\phi \in Gal(M:L_1)$. Therefore $Gal(M:L_1) \supseteq Gal(M:L_2)$.
+
+\subsection*{Exercise 8.1.5}
+Draw a diagram like Figure 8.1 for the second half of
+Lemma 8.1.2(i).
+\\\\
+\textbf{Solution:}
+\begin{equation*}
+\begin{tikzcd}
+    & 1 \arrow[d, dash] & M \arrow[d, dash]\\
+    & H_1 \arrow[d, dash] & Fix(H_1) \arrow[d, dash]\\
+    & H_2 \arrow[d, dash] & Fix(H_2) \arrow[d, dash]\\
+    & Gal(M:K) & K
+\end{tikzcd}
+\end{equation*}
+
 \end{document}
