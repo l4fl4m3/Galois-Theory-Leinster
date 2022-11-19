@@ -748,4 +748,31 @@ By \textbf{Theorem 7.1.5} we that $SF_K(f) \iff M:K$ is finite and normal, where
 we can choose an $f$ e.g., $(t^2-2, t^2+1, t^2+2)$, thereby making each extension a splitting field. Therefore, we get by the theorem above,
 that each extension is finite and normal. Even simpler, each of the extensions is of degree 2, hence they are normal extensions.
 
+\subsection*{Exercise 8.3.3}
+Show that every such $H$ must contain $p^2$.
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 8.3.4}
+I took a small liberty in the sentence beginning
+‘The same argument’, because it included an inequality but the
+previous argument didn’t. Prove the statement made in that sentence.
+\\\\
+\textbf{Solution:}
+The statement is considering $\phi$ of order 2 only.
+If $[\mathbb{Q}(\xi,i):\mathbb{Q}(\alpha)] = 2$, then we are in agreement with the previous argument.
+The only other case is then that $[\mathbb{Q}(\xi,i):\mathbb{Q}(\alpha)] = 1$, in which case $\mathbb{Q}(\alpha) = \mathbb{Q}(\xi, i)$,
+and $\phi = id$ which is of order 1, and hence, $Fix\langle \phi \rangle = \mathbb{Q}(\xi, i)$, by the fundamental theorem.
+
+\subsection*{Exercise 8.3.5}
+Choose one of $\mathbb{Q}(\xi^2), \mathbb{Q}(i) or \mathbb{Q}(\xi^2i)$ and do the same as I did for it as I just did for $\mathbb{Q}(\xi^2,i)$.
+\\\\
+\textbf{Solution:}
+We choose $L=\mathbb{Q}(\xi^2)$. 
+This gives us \[ G / \langle k, \rho^2 \rangle  \cong \text{Gal}(\mathbb{Q}(\xi^2):\mathbb{Q}) \]
+The left hand side is the quotient of $D_4$ by a subgroup isomorphic to $C_2 \times C_2$. As we can observe, it has order 2.
+Hence $G/ \langle k, p^2 \rangle \cong C_2$. On the other hand, $\mathbb{Q}(\xi^2)$ is the splitting field over $\mathbb{Q}$ of
+$t^2 -2$. This is due to the fact the $\xi^2 = (\sqrt[4]{2})^2 = \sqrt2$. We know trivially that $\text{Gal}_{\mathbb{Q}}(t^2-2) = \text{Gal}(\mathbb{R}: \mathbb{Q}) \cong C_2$.
+This confirms the isomorphism.
+
 \end{document}
