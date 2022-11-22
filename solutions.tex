@@ -789,4 +789,34 @@ In the last sentence of that proof, how exactly does it `follow'?
 \textbf{Solution:}
 We have that $\phi , \theta \in Gal_{\mathbb{Q}}(t^n - 1) = Gal(SF_{\mathbb{Q}}(t^n - 1): \mathbb{Q}) = Gal(\mathbb{Q}(\omega): \mathbb{Q})$.
 Then by \textbf{Lemma 4.3.6} we have that if $(\theta \circ \phi)(a)$ = $(\phi \circ \theta)(a)$, then $\theta \circ \phi = \phi \circ \theta$.
+
+\subsection*{Exercise 9.1.10}
+What does the proof of Lemma 9.1.8 tell you about the eigenvectors and eigenvalues of the elements of $Gal_K(t^n-a)$?
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 9.1.11}
+Use Lemmas 9.1.6 and 9.1.8 to show that $Gal_{\mathbb{Q}}(t^n - a)$ is solvable for all $a \in \mathbb{Q}$.
+\\\\
+\textbf{Solution:}
+A group is solvable if it can be constructed from abelian groups through extensions.
+Hence we have $\{1\} = G_0 \unlhd G_1 \unlhd ... \unlhd G_k = G$ such that $G_{i-1}$ is normal in $G_i$ and $G_{i} / G_{i-1}$
+is an abelian group, for $i = 1, 2, ..., k$.
+\\\\
+We have that $Gal_{\mathbb{Q}}(t^n-a) = Gal(SF_{\mathbb{Q}}(t^n - a): \mathbb{Q})$.
+\\\\
+If $a=0$ then $Gal_{\mathbb{Q}}(t^n) = Gal(SF_{\mathbb{Q}}(t^n): \mathbb{Q}) = Gal(\mathbb{Q}: \mathbb{Q}) = \{1\}$ which is trivially solvable. 
+\\\\
+For $a \neq 0$, we need to show that $Gal_{\mathbb{Q}}(t^n-a)$ is abelian. If we choose a positive rational root $\xi$ of $t^n - a$ and let $\omega = e^{2\pi i /n}$, then
+all the roots of $t^n - a$ are $\xi, \omega\xi, ..., \omega^{n-1}\xi$. Hence $SF_{\mathbb{Q}}(t^n - a)$ contains $(\omega^i\xi)/\xi \ \forall i$, therefore $t^n-1$ splits in $SF_{\mathbb{Q}}(t^n - a)$.
+Hence we have $\mathbb{Q} \subseteq SF_{\mathbb{Q}}(t^n-1) \subseteq SF_{\mathbb{Q}}(t^n-a)$.
+\\\\
+By \textbf{Lemma 9.1.6} we have that $Gal_{\mathbb{Q}}(t^n-1)$ is abelian.  Let $K = SF_{\mathbb{Q}}(t^n-1)$, then by \textbf{Lemma 9.1.8} $Gal_K(t^n-a) = Gal(SF_K(t^n-a):K)$ is abelian.
+Since all the extensions are splitting fields, we also know they are all normal.
+Hence we have $\{1\} \unlhd Gal(K:\mathbb{Q}) \unlhd Gal(SF_{K}(t^n-a): K)$.
+\\\\
+We know that $Gal(K:\mathbb{Q})/\{ 1 \} = Gal(K:\mathbb{Q})$ which is abelian.
+We also know that $Gal(SF_{K}(t^n-a):K)/Gal(K:\mathbb{Q})$ is abelian since the quotient group of an abelian group is also abelian.
+Therefore $Gal_{\mathbb{Q}}(t^n - a)$  is solvable.
+
 \end{document}
