@@ -819,4 +819,45 @@ We know that $Gal(K:\mathbb{Q})/\{ 1 \} = Gal(K:\mathbb{Q})$ which is abelian.
 We also know that $Gal(SF_{K}(t^n-a):K)/Gal(K:\mathbb{Q})$ is abelian since the quotient group of an abelian group is also abelian.
 Therefore $Gal_{\mathbb{Q}}(t^n - a)$  is solvable.
 
+\subsection*{Exercise 9.2.2}
+Let $N:M:K$ be extensions, with $N:M,\ M:K$ and $N:K$
+all finite, normal and separable. Show that if $N:M$ and $M:K$
+are solvable then so is $N:K$.
+\\\\
+\textbf{Solution:}
+This is straightforward from the \textbf{Definition 9.2.1}.
+We have $K \subseteq M \subseteq N$. We know that $M:K$ and $N:M$ are finite and normal.
+We also know that $Gal(M:K)$ and $Gal(N:M)$ are abelian since they are solvable.
+Then since $N:K$ is a finite normal seperable extension, we have that $N:K$ is solvable, where $r = 2$.
+
+\subsection*{Exercise 9.2.5}
+Prove the $\Longleftarrow$ direction of Lemma 9.2.4.
+\\\\
+\textbf{Solution:}
+If $Gal(M:K)$ is solvable then we have:
+\[\{1\} = Gal(M:L_r) \unlhd Gal(M:L_{r-1}) \unlhd ... \unlhd Gal(M:L_0) = Gal(M:K) \]
+where $Gal(M:L_{i})$ is normal in $Gal(M:L_{i-1})$  and $Gal(M:L_{i-1})/Gal(M:L_{i})$ is an abelian group for $i=r, r-1, ..., 1$.
+\\\\
+Since $M:K$ is finite, normal, and seperable, by \textbf{Lemma 7.2.16} we have that $M:L_i$ are seperable and by \textbf{Corollary 7.1.6}
+we have that $M:L_i$ are finite and normal, for each $i \in \{ 1, ..., r\}$.
+\\\\
+Since $M:K$ is finite, normal, and seperable, by the fundmental theorem we can conclude that,
+$L_1$ is a normal extension of $K=L_0$ since $Gal(M:L_1)$ is a normal subgroup of $Gal(M:K)$.
+Similarly, $M:L_i$ is finite, normal, and seperable, then by the fundamental theorem $L_i$ is a normal extension of $L_{i-1}$ since $Gal(M:L_i)$ is a normal subgroup of $Gal(M:L_{i-1})$,
+for each $i \in \{1,..., r\}$
+\\\\
+In addition, again by the fundamental theorem for each $i \in \{1,...,r\}$:
+\[ \frac{Gal(M:L_{i-1})}{Gal(M:L_{i})} \cong Gal(L_i:L_{i-1})\]
+where we have shown earlier that the left hand side is an abelian group, hence the right side must also
+be abelian.
+\\\\
+Hence we have $K=L_0 \subseteq L_1 \subseteq ... \subseteq L_r = M$ where $r \ge 0$ and 
+where we have proved that for each $i \in \{1,...,r\}, \ L_i:L_{i-1}$ is normal and $Gal(L_i:L_{i-1})$ is abelian.
+Hence $M:K$ is solvable. 
+
+\subsection*{Exercise 9.2.5}
+Prove the $\Longleftarrow$ direction of Lemma 9.2.4.
+\\\\
+\textbf{Solution:}
+
 \end{document}
