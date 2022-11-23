@@ -855,9 +855,21 @@ Hence we have $K=L_0 \subseteq L_1 \subseteq ... \subseteq L_r = M$ where $r \ge
 where we have proved that for each $i \in \{1,...,r\}, \ L_i:L_{i-1}$ is normal and $Gal(L_i:L_{i-1})$ is abelian.
 Hence $M:K$ is solvable. 
 
-\subsection*{Exercise 9.2.5}
-Prove the $\Longleftarrow$ direction of Lemma 9.2.4.
+\subsection*{Exercise 9.3.4}
+Explain why, in the last paragraph, $\sigma^r$ has order $p$.
 \\\\
 \textbf{Solution:}
+By definition we know that the order of a permutation $\rho$ is the least positive integer $r$ such that $\rho^r$ is the identity permuation.
+Hence for our cycle $\sigma = (a_0 \ a_1 \ ... \ a_{p-1})$ its order can never be less than $p$ since for $r \in \{1,...,p-1\}$ $\sigma^r(a_0) = a_r$.
+Similarly, $\sigma^p = e$ (the identity permutation).
+Hence since $\sigma^p = e$ and $\sigma^r \neq e$ for $r \in\{1,...,p-1\}$, then $\sigma^r = p$.
 
+\subsection*{Exercise 9.3.6}
+Prove that for every $n \ge 5$, there is some polynomial of degree $n$ that is not solvable by radicals. 
+\\\\
+\textbf{Solution:}
+By \textbf{Theorem 9.3.5} we have that not every polynomial of degree 5 is solvable by radicals, let one such polynomial be $f(t)$. 
+For $n>5$, assume for sake of contradiction, that every polynomial of degree $n$ is solvable by radicals.
+We would then have that $f(t)\cdot t^{n-5}$ is solvable by radicals, which would imply that $f(t)$ is solvable
+by radicals, hence a contradiction.
 \end{document}
