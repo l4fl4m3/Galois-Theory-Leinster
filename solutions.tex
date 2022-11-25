@@ -872,4 +872,56 @@ By \textbf{Theorem 9.3.5} we have that not every polynomial of degree 5 is solva
 For $n>5$, assume for sake of contradiction, that every polynomial of degree $n$ is solvable by radicals.
 We would then have that $f(t)\cdot t^{n-5}$ is solvable by radicals, which would imply that $f(t)$ is solvable
 by radicals, hence a contradiction.
+
+\section*{Chapter 10. Finite Fields}
+\subsection*{Exercise 10.1.4}
+Work out the values of the Frobenius automorphism on the field $\mathbb{F}_3(\sqrt 2)$.
+\\\\
+\textbf{Solution:}
+By \textbf{Lemma 10.1.2} we have that $n = [\mathbb{F}_3(\sqrt 2): \mathbb{F}_3] = 2$, hence we have that
+$|\mathbb{F}_3(\sqrt 2)| = 3^2 = 9$. Hence we have that $\mathbb{F}_3(\sqrt 2) = \{0, 1, 2, \sqrt 2, 2 \sqrt 2, 1+ \sqrt 2, 1+ 2\sqrt2, 2+ \sqrt2, 2+2\sqrt2\}$.
+The Frobenius map for our field is then (with $p = 3$) $\theta: r \mapsto r^3$.
+Hence we get:
+\begin{equation*}
+    \begin{aligned}
+        0 & \mapsto 0\\
+        1 & \mapsto 1\\
+        2 & \mapsto 2\\
+        \sqrt2 & \mapsto 2\sqrt2\\
+        1+\sqrt2 & \mapsto 1 + 2\sqrt2\\
+        2+\sqrt2 & \mapsto 2 + 2\sqrt2\\
+        2\sqrt2 & \mapsto \sqrt2\\
+        1+2\sqrt2 & \mapsto 1 + \sqrt2\\
+        2+2\sqrt2 & \mapsto 2 + \sqrt2\\
+    \end{aligned}
+\end{equation*}
+
+\subsection*{Exercise 10.1.7}
+Verify directly that $\beta^4 = \beta$ for all $\beta$ in the 4-element field $\mathbb{F}_2(\alpha)$ of Example 5.1.8. 
+\\\\
+\textbf{Solution:}
+We have that $\mathbb{F}_2(\alpha) = \{0, 1, \alpha, 1+\alpha\}$. Then we have that:
+\begin{equation*}
+    \begin{aligned}
+        0^4 &= 0\\
+        1^4 &= 1\\
+        \alpha^4 &= \alpha^2\alpha^2 = (1+\alpha)(1+\alpha) = \alpha\\
+        (1+\alpha)^4 &= 1^4 + \alpha^4 = 1 + \alpha \\
+    \end{aligned}
+\end{equation*}
+Indeed $\beta^4 = \beta$.
+
+\subsection*{Exercise 10.1.7}
+Verify directly that $\beta^4 = \beta$ for all $\beta$ in the 4-element field $\mathbb{F}_2(\alpha)$ of Example 5.1.8. 
+\\\\
+\textbf{Solution:}
+
+\subsection*{Exercise 10.2.3}
+Let $K$ be a field and let $H$ be a finite subgroup of $K^{\times}$ of order $n$.
+Prove that $H \subseteq U_n(K)$.
+\\\\
+\textbf{Solution:}
+By \textbf{Proposition 10.2.1} $H$ is cyclic. We also have by \textbf{Example 10.2.2} that
+$U_n(K) = \{\alpha \in  K: \alpha^n= 1\}$, and it cyclic.
+
 \end{document}
