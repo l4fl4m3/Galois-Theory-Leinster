@@ -4,4 +4,4 @@ These are my solutions the exercises in Tom Leinster's lecture notes on Galois T
 I have also uploaded these to:
 https://math.solverer.com/library/tom_leinster/galois_theory which is an excellent website that has a plethora of solutions to some incredible texts.
 
-A work in progress...
+These are now complete. A few questions from some chapters are missing, if I get around to it, I will complete them.
