@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.22)  24 NOV 2022 13:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.22)  29 NOV 2022 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,24 +908,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 915--918
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--926
+Underfull \hbox (badness 10000) in paragraph at lines 920--928
 
  []
 
-[22] (./solutions.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 930--936
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 938--948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--975
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 990--994
+
+ []
+
+[24] (./solutions.aux) ) 
 Here is how much of TeX's memory you used:
- 14140 strings out of 478268
- 298076 string characters out of 5846347
+ 14298 strings out of 478268
+ 302036 string characters out of 5846347
  562699 words of memory out of 5000000
- 32103 multiletter control sequences out of 15000+600000
+ 32261 multiletter control sequences out of 15000+600000
  478176 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,15n,118p,506b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,20n,118p,506b,976s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on solutions.pdf (22 pages, 262435 bytes).
+Output written on solutions.pdf (24 pages, 268754 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
